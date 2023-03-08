@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Password Strength Indicator
+            <BR>in HTML,CSS & JAVASCRIPT
+        </header>
+        <form action="#">
+            <div class="field">
+                <input type="password" name="" id="password" placeholder="Password" onkeyup="trigger()">
+                <span class="showBtn">SHOW</span>
+            </div>
+            <div class="indicator">
+                <span class="weak"></span>
+                <span class="medium"></span>
+                <span class="strong"></span>
+            </div>
+            <div class="text"></div>
+        </form>
+        <div class="follow">
+            <li class="">
+                <span class="one-special-char">
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                    &nbsp;Lowercase &amp; Uppercase
+                </span>
+            </li>
+            <li class="">
+                <span class="one-special-char">
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                    &nbsp;Special Character (!@#$%^&*)
+                </span>
+            </li>
+            <li class="">
+                <span class="one-special-char">
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                    &nbsp;Number (0-9)
+                </span>
+            </li>
+            <li class="">
+                <span class="eight-character">
+                    <i class="fas fa-circle" aria-hidden="true"></i>
+                    &nbsp;Atleast 8 Character
+                </span>
+            </li>
+        </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>
